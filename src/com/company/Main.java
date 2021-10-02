@@ -41,7 +41,23 @@ public class Main {
                 myCar.model + " It's cost "+myCar.cost + " It's weight "
         + myCar.weight);
 
-        dog.takeForWalk();
+        //me.getSalary();
+        me.setSalary(1405.12);
+        //me.setSalary(-10.1);
+        //me.setSalary(3948448.49);
+        me.getSalary();
+
+        //myCar.ofkoz = 1300.20;
+
+        Car fiat = new Car();
+        fiat.ofkoz = 1300.20;
+        fiat.model = "bravo";
+
+        me.setSalary(2000.20);
+        me.setCar(fiat);
+        System.out.println(me.getCar().model);
+
+        /*dog.takeForWalk();
         System.out.println(dog.weight);
 
         dog.takeForWalk();
@@ -73,6 +89,6 @@ public class Main {
 
         dog.feed();
         System.out.println(dog.weight);
-
+*/
     }
 }

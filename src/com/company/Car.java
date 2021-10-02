@@ -5,4 +5,5 @@ public class Car {
     String producer;
     Integer weight;
     Double cost;
+    Double ofkoz;
 }
