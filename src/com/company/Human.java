@@ -5,19 +5,25 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Human {
+public class Human extends Animal {
     String firstName;
     String lastName;
     Integer age;
     private Double salary;
-    Animal pet;
-    private Car car;
+    public Animal pet;
+    public Car car;
+    public Double cash;
+
+    Human (){
+        super("homo sapiens")
+        this.salary = 1200.00;
+    }
 
     private Object Date;
 
-    Human() {
-        this.salary = 1200.0;
-    }
+    //Human() {
+    //    this.salary = 1200.0;
+    //}
 
     void setSalary(Double salary) {
         if (salary > 0) {
@@ -51,5 +57,7 @@ public class Human {
     Car getCar(){
         return this.car;
     }
+
+
 
 }

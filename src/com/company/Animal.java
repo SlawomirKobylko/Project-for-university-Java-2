@@ -67,5 +67,6 @@ public class Animal {
         {
             this.alive=true;
         }
+
     }
 }
