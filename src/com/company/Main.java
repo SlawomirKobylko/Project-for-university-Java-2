@@ -57,6 +57,14 @@ public class Main {
         me.setCar(fiat);
         System.out.println(me.getCar().model);
 
+        /*public class Human extends Animal{
+            String species;
+            String name;
+            Integer weight;
+            Integer age;
+            Boolean alive;
+        }*/
+
         /*dog.takeForWalk();
         System.out.println(dog.weight);
 
