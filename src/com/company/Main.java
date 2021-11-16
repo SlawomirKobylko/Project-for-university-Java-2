@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.devices.Car;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -56,6 +58,14 @@ public class Main {
         me.setSalary(2000.20);
         me.setCar(fiat);
         System.out.println(me.getCar().model);
+
+        System.out.println(dog);
+        System.out.println(myCar);
+        System.out.println(fiat);
+
+        System.out.println(myCar.toString());
+        System.out.println(me.toString());
+        System.out.println(cat.toString());
 
         /*public class Human extends Animal{
             String species;

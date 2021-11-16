@@ -1,17 +1,28 @@
-package com.company;
+package com.company.devices;
 
 
 
 public class Car {
-    String model;
-    String producer;
-    Integer weight;
-    Double cost;
-    Double ofkoz;
+    public String model;
+    public String producer;
+    public Integer weight;
+    public Double cost;
+    public Double ofkoz;
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", producer='" + producer + '\'' +
+                ", weight=" + weight +
+                ", cost=" + cost +
+                ", ofkoz=" + ofkoz +
+                '}';
+    }
+}
 //public class Car extends Device import Saleable
 
-    public void turnOn(){
+    /*public void turnOn(){
         System.out.println("przekrecam kluczyk");
     }
 
@@ -37,4 +48,4 @@ public class Car {
             System.out.println("transakcja się udała, kupiono " + this);
         }
     }
-}
+}*/

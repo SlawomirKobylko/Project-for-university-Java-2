@@ -7,6 +7,10 @@ public class Animal {
     Integer age;
     Boolean alive;
 
+    public String toString(){
+        return "species: " + this.species + " name " + this.name;
+    }
+
     Animal(String species) {
         this.species = species;
         this.alive = true;
@@ -63,9 +67,8 @@ public class Animal {
             System.out.println("This animal is dead, " +
                     "It's don't take for walk");
         }
-        else
-        {
-            this.alive=true;
+        else {
+            this.alive = true;
         }
 
     }

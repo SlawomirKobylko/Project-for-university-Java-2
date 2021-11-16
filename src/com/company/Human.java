@@ -1,9 +1,8 @@
 package com.company;
 
-import java.sql.SQLOutput;
-import java.util.Calendar;
+import com.company.devices.Car;
+
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 public class Human extends Animal {
     String firstName;
@@ -15,7 +14,7 @@ public class Human extends Animal {
     public Double cash;
 
     Human (){
-        super("homo sapiens")
+        super("homo sapiens");
         this.salary = 1200.00;
     }
 
@@ -59,5 +58,16 @@ public class Human extends Animal {
     }
 
 
-
+    public String toString() {
+        return "Human{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                ", pet=" + pet +
+                ", car=" + car +
+                ", cash=" + cash +
+                ", Date=" + Date +
+                '}';
+    }
 }
