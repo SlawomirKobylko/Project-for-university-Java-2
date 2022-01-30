@@ -1,5 +1,7 @@
 package com.company;
 
-//public class Saleable {
-    //void sale (Human seller, Human buyer, Double price)
-//}
+import com.company.devices.*;
+
+public class Saleable {
+    void sale (Human seller, Human buyer, Double price){}
+}

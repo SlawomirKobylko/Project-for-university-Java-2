@@ -1,20 +1,15 @@
 package com.company;
 
-public class Animal {
+import com.company.devices.*;
+public abstract class Animal {
     String species;
     String name;
     Integer weight;
     Integer age;
     Boolean alive;
-
-    public String toString(){
-        return "species: " + this.species + " name " + this.name;
-    }
-
     Animal(String species) {
         this.species = species;
         this.alive = true;
-
         if (this.species == "canis") {
             this.weight = 12;
         } else if (this.species == "felis") {
@@ -27,7 +22,6 @@ public class Animal {
     {
         System.out.println("I'm "+ this.name);
     }
-
     void doYouLike(String foodType)
     {
         if (this.species == "felis"&&foodType=="mouse")
@@ -48,7 +42,7 @@ public class Animal {
             return this.age;
         }
     }
-    void feed()
+
     {
         if (this.alive = false)
         {
@@ -67,9 +61,12 @@ public class Animal {
             System.out.println("This animal is dead, " +
                     "It's don't take for walk");
         }
-        else {
-            this.alive = true;
+        else
+        {
+            this.alive=true;
         }
 
     }
+
+    public abstract void feed();
 }
